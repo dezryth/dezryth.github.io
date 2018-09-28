@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Scott R Christian</title>
+    <link>https://dezryth.github.io/categories/</link>
+    <description>Recent content in Categories on Scott R Christian</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 Sep 2017 04:17:55 +0000</lastBuildDate>
+    
+	<atom:link href="https://dezryth.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Apple</title>
+      <link>https://dezryth.github.io/categories/apple/</link>
+      <pubDate>Sat, 09 Sep 2017 04:17:55 +0000</pubDate>
+      
+      <guid>https://dezryth.github.io/categories/apple/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Japan Trip 2010</title>
+      <link>https://dezryth.github.io/categories/japan-trip-2010/</link>
+      <pubDate>Fri, 16 Jul 2010 06:20:01 +0000</pubDate>
+      
+      <guid>https://dezryth.github.io/categories/japan-trip-2010/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://dezryth.github.io/categories/linux/</link>
+      <pubDate>Sat, 09 Sep 2017 04:17:55 +0000</pubDate>
+      
+      <guid>https://dezryth.github.io/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Politics</title>
+      <link>https://dezryth.github.io/categories/politics/</link>
+      <pubDate>Sat, 01 Apr 2017 23:08:13 +0000</pubDate>
+      
+      <guid>https://dezryth.github.io/categories/politics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Technology</title>
+      <link>https://dezryth.github.io/categories/technology/</link>
+      <pubDate>Fri, 21 Sep 2018 18:31:16 +0000</pubDate>
+      
+      <guid>https://dezryth.github.io/categories/technology/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
