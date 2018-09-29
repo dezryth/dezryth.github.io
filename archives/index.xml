@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Archives on Scott R Christian</title>
-    <link>scottrchristian.com/archives/</link>
+    <link>https://scottrchristian.com/archives/</link>
     <description>Recent content in Archives on Scott R Christian</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="scottrchristian.com/archives/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://scottrchristian.com/archives/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
