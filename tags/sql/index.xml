@@ -17,7 +17,7 @@
       <pubDate>Wed, 04 Oct 2017 13:38:45 +0000</pubDate>
       
       <guid>https://dezryth.github.io/2017/10/04/sql-the-differences-in-joins/</guid>
-      <description>Oddly enough, the language I would say I have the most experience with has been T-SQL. A DML! Transact SQL is a proprietary extension to Structured Query Language and used with Microsoft&amp;#8217;s SQL Server. For the longest time I&amp;#8217;ve hacked together various reports, stored procedures, and jobs to do a range of things. Be it sending daily formatted HTML reports, to using complex queries that update the back end database for business software.</description>
+      <description>The language I might say I have had the most experience with has been T-SQL. A DML! Transact SQL is a proprietary extension to Structured Query Language and used with Microsoft&amp;rsquo;s SQL Server. For the longest time I&amp;rsquo;ve hacked together various reports, stored procedures, and jobs to do a range of things. Be it sending daily formatted HTML reports, to using complex queries that update the back end database for business software.</description>
     </item>
     
   </channel>

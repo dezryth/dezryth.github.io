@@ -8,18 +8,18 @@
 <meta name="generator" content="Hugo 0.49 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="Scott Christian">
 <meta name="keywords" content="">
-<meta name="description" content="RaspberryPi Time Machine This week I received a new MacBook Pro 2017 to use as my development machine when &#8216;on the go&#8217; (or on the couch, to be more accurate). I also received a larger SSD to replace the boot drive on Desktop PC, and suddenly had a 120GB SSD with no job. I decided to put it to work to hold backups of my new mobile dev machine in the event of the worst case scenario.">
+<meta name="description" content="RaspberryPi Time Machine This week I received a new MacBook Pro 2017 to use as my development machine when &lsquo;on the go&rsquo; (or on the couch, to be more accurate). I also received a larger SSD to replace the boot drive on Desktop PC, and suddenly had a 120GB SSD with no job. I decided to put it to work to hold backups of my new mobile dev machine in the event of the worst case scenario.">
 
 
-<meta property="og:description" content="RaspberryPi Time Machine This week I received a new MacBook Pro 2017 to use as my development machine when &#8216;on the go&#8217; (or on the couch, to be more accurate). I also received a larger SSD to replace the boot drive on Desktop PC, and suddenly had a 120GB SSD with no job. I decided to put it to work to hold backups of my new mobile dev machine in the event of the worst case scenario.">
+<meta property="og:description" content="RaspberryPi Time Machine This week I received a new MacBook Pro 2017 to use as my development machine when &lsquo;on the go&rsquo; (or on the couch, to be more accurate). I also received a larger SSD to replace the boot drive on Desktop PC, and suddenly had a 120GB SSD with no job. I decided to put it to work to hold backups of my new mobile dev machine in the event of the worst case scenario.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Set up a Raspberry Pi 3 Time Machine!">
 <meta name="twitter:title" content="Set up a Raspberry Pi 3 Time Machine!">
 <meta property="og:url" content="https://dezryth.github.io/2017/09/08/raspberry-pi-time-machine/">
 <meta property="twitter:url" content="https://dezryth.github.io/2017/09/08/raspberry-pi-time-machine/">
 <meta property="og:site_name" content="Scott R Christian">
-<meta property="og:description" content="RaspberryPi Time Machine This week I received a new MacBook Pro 2017 to use as my development machine when &#8216;on the go&#8217; (or on the couch, to be more accurate). I also received a larger SSD to replace the boot drive on Desktop PC, and suddenly had a 120GB SSD with no job. I decided to put it to work to hold backups of my new mobile dev machine in the event of the worst case scenario.">
-<meta name="twitter:description" content="RaspberryPi Time Machine This week I received a new MacBook Pro 2017 to use as my development machine when &#8216;on the go&#8217; (or on the couch, to be more accurate). I also received a larger SSD to replace the boot drive on Desktop PC, and suddenly had a 120GB SSD with no job. I decided to put it to work to hold backups of my new mobile dev machine in the event of the worst case scenario.">
+<meta property="og:description" content="RaspberryPi Time Machine This week I received a new MacBook Pro 2017 to use as my development machine when &lsquo;on the go&rsquo; (or on the couch, to be more accurate). I also received a larger SSD to replace the boot drive on Desktop PC, and suddenly had a 120GB SSD with no job. I decided to put it to work to hold backups of my new mobile dev machine in the event of the worst case scenario.">
+<meta name="twitter:description" content="RaspberryPi Time Machine This week I received a new MacBook Pro 2017 to use as my development machine when &lsquo;on the go&rsquo; (or on the couch, to be more accurate). I also received a larger SSD to replace the boot drive on Desktop PC, and suddenly had a 120GB SSD with no job. I decided to put it to work to hold backups of my new mobile dev machine in the event of the worst case scenario.">
 <meta property="og:locale" content="en-us">
 
   
@@ -273,11 +273,11 @@
 
 <h1 id="raspberrypi-time-machine">RaspberryPi Time Machine</h1>
 
-<p>This week I received a new MacBook Pro 2017 to use as my development machine when &#8216;on the go&#8217; (or on the couch, to be more accurate). I also received a larger SSD to replace the boot drive on Desktop PC, and suddenly had a 120GB SSD with no job. I decided to put it to work to hold backups of my new mobile dev machine in the event of the worst case scenario. Now, I could have just tossed it in my external enclosure and plugged it in every once in a while for backups, but I know I&#8217;m too lazy to remember to do that often enough, and backing up wirelessly over the network is just so much more convenient and sounded like the kind of project I&#8217;d have a little fun with. Below is how the process went. If you stumbled upon this, you should be able to follow along with a few possible differences depending on the model of Pi you have. Make sure to read the following before moving to the instructions, as you&#8217;ll appreciate avoiding all the issues I ran into figuring this out. Thanks to <a href="https://www.howtogeek.com/276468/how-to-use-a-raspberry-pi-as-a-networked-time-machine-drive-for-your-mac/">HTG</a> for getting me most of the way there.</p>
+<p>This week I received a new MacBook Pro 2017 to use as my development machine when &lsquo;on the go&rsquo; (or on the couch, to be more accurate). I also received a larger SSD to replace the boot drive on Desktop PC, and suddenly had a 120GB SSD with no job. I decided to put it to work to hold backups of my new mobile dev machine in the event of the worst case scenario. Now, I could have just tossed it in my external enclosure and plugged it in every once in a while for backups, but I know I&rsquo;m too lazy to remember to do that often enough, and backing up wirelessly over the network is just so much more convenient and sounded like the kind of project I&rsquo;d have a little fun with. Below is how the process went. If you stumbled upon this, you should be able to follow along with a few possible differences depending on the model of Pi you have. Make sure to read the following before moving to the instructions, as you&rsquo;ll appreciate avoiding all the issues I ran into figuring this out. Thanks to <a href="https://www.howtogeek.com/276468/how-to-use-a-raspberry-pi-as-a-networked-time-machine-drive-for-your-mac/">HTG</a> for getting me most of the way there.</p>
 
 <h1 id="requirements">Requirements:</h1>
 
-<p>Raspberry Pi **with Raspbian Jessie &#8211;</p>
+<p>Raspberry Pi **with Raspbian Jessie;</p>
 
 <p>** You may be able to get this to work at some point in the future, or with some modifications, but some of the commands in my instructions WILL NOT work in Raspbian stretch when installing Netatalk.</p>
 
@@ -295,15 +295,15 @@
 
 <p>Format your external drive on your macOS machine to work with time machine.</p>
 
-<p>Launch disk utility. Select your drive. Give it a name and set the format to &#8216;Mac OS Extended, and scheme to GUID Partition Map. Click Erase.</p>
+<p>Launch disk utility. Select your drive. Give it a name and set the format to &lsquo;Mac OS Extended&rsquo;, and scheme to GUID Partition Map. Click Erase.</p>
 
 <p><img class="alignnone size-full wp-image-128" src="https://i0.wp.com/scottrchristian.com/wp-content/uploads/2017/09/hfs1.png?resize=650%2C331&#038;ssl=1" alt="" width="650" height="331" srcset="https://i0.wp.com/scottrchristian.com/wp-content/uploads/2017/09/hfs1.png?w=650&ssl=1 650w, https://i0.wp.com/scottrchristian.com/wp-content/uploads/2017/09/hfs1.png?resize=300%2C153&ssl=1 300w" sizes="(max-width: 650px) 100vw, 650px" data-recalc-dims="1" /></p>
 
-<p>Open finder and right click your drive. Select &#8216;Get Info&#8217;.</p>
+<p>Open finder and right click your drive. Select Get Info&rsquo;.</p>
 
 <p><img class="alignnone size-full wp-image-129" src="https://i2.wp.com/scottrchristian.com/wp-content/uploads/2017/09/hfs2.png?resize=533%2C281&#038;ssl=1" alt="" width="533" height="281" srcset="https://i2.wp.com/scottrchristian.com/wp-content/uploads/2017/09/hfs2.png?w=533&ssl=1 533w, https://i2.wp.com/scottrchristian.com/wp-content/uploads/2017/09/hfs2.png?resize=300%2C158&ssl=1 300w" sizes="(max-width: 533px) 100vw, 533px" data-recalc-dims="1" /></p>
 
-<p>Set &#8216;everyone&#8217; to &#8216;Read &amp; Write&#8217;, and check &#8216;Ignore ownership on this volume&#8217;</p>
+<p>Set &lsquo;everyone&rsquo; to &lsquo;Read &amp; Write&rsquo;, and check &lsquo;Ignore ownership on this volume&rsquo;</p>
 
 <p><img class="alignnone size-full wp-image-130" src="https://i1.wp.com/scottrchristian.com/wp-content/uploads/2017/09/hfs3.png?resize=589%2C232&#038;ssl=1" alt="" width="589" height="232" srcset="https://i1.wp.com/scottrchristian.com/wp-content/uploads/2017/09/hfs3.png?w=589&ssl=1 589w, https://i1.wp.com/scottrchristian.com/wp-content/uploads/2017/09/hfs3.png?resize=300%2C118&ssl=1 300w" sizes="(max-width: 589px) 100vw, 589px" data-recalc-dims="1" /></p>
 
@@ -344,13 +344,13 @@ sudo apt-get upgrade</code></pre>
 
 <p><strong>! BE CAREFUL !</strong></p>
 
-<p>Make sure you enter this correctly, as messing up here and not realizing will corrupt your fstab file and if you reboot before correcting it, your pi will not boot correctly. In the event of this, you&#8217;ll have to edit your fstab file from another Linux system to fix your mistake.</p>
+<p>Make sure you enter this correctly, as messing up here and not realizing will corrupt your fstab file and if you reboot before correcting it, your pi will not boot correctly. In the event of this, you&rsquo;ll have to edit your fstab file from another Linux system to fix your mistake.</p>
 
 <p>Test that your drive mounts correctly after this modification:</p>
 
 <pre><code class="language-bash">sudo mount -a</code></pre>
 
-<p>If you don&#8217;t get an error here, then you&#8217;re set.</p>
+<p>If you don&rsquo;t get an error here, then you&rsquo;re set.</p>
 
 <p>Install Netatalk:</p>
 
@@ -366,7 +366,7 @@ sudo apt-get upgrade</code></pre>
 
 <pre><code class="language-bash">tar -xf netatalk-3.1.11.tar.gz</code></pre>
 
-<p>Switch to the new folder created, and run this command to configure Netatalk&#8217;s settings:</p>
+<p>Switch to the new folder created, and run this command to configure Netatalk&rsquo;s settings:</p>
 
 <pre class="line-numbers"><code class="language-bash">./configure \
 --with-init-style=debian-systemd \
@@ -387,15 +387,15 @@ sudo apt-get upgrade</code></pre>
 
 <pre><code class="language-bash">sudo make install</code></pre>
 
-<p>Ensure it&#8217;s running with this command:</p>
+<p>Ensure it&rsquo;s running with this command:</p>
 
 <pre><code class="language-bash">netatalk -V</code></pre>
 
-<p>We&#8217;ve now got to configure Netatalk</p>
+<p>We&rsquo;ve now got to configure Netatalk</p>
 
 <pre><code class="language-bash">sudo nano /etc/nsswitch.conf</code></pre>
 
-<p>To get your Time Machine drive to show up in Finder&#8217;s sidebar you&#8217;ll need to add this to the line that begins with &#8216;hosts&#8217;:</p>
+<p>To get your Time Machine drive to show up in Finder&rsquo;s sidebar you&rsquo;ll need to add this to the line that begins with &lsquo;hosts&rsquo;:</p>
 
 <pre><code class="language-bash">mdns4 mdns</code></pre>
 
@@ -447,13 +447,13 @@ sudo service netatalk start</code></pre>
 <pre class="line-numbers"><code class="language-bash">sudo systemctl enable avahi-daemon
 sudo systemctl enable netatalk</code></pre>
 
-<p><em>We&#8217;re almost done.</em></p>
+<p><em>We&rsquo;re almost done.</em></p>
 
-<p>Now hop on to your Mac and you should see your Pi under &#8216;shared&#8217; inside of Finder.</p>
+<p>Now hop on to your Mac and you should see your Pi under &lsquo;shared&rsquo; inside of Finder.</p>
 
 <p><img class="alignnone size-full wp-image-131" src="https://i2.wp.com/scottrchristian.com/wp-content/uploads/2017/09/finder1.png?resize=650%2C379&#038;ssl=1" alt="" width="650" height="379" srcset="https://i2.wp.com/scottrchristian.com/wp-content/uploads/2017/09/finder1.png?w=650&ssl=1 650w, https://i2.wp.com/scottrchristian.com/wp-content/uploads/2017/09/finder1.png?resize=300%2C175&ssl=1 300w" sizes="(max-width: 650px) 100vw, 650px" data-recalc-dims="1" /></p>
 
-<p>Hit &#8216;Command + K&#8217; to connect to the server with your Pi&#8217;s IP address (which you should have given a static IP from your router)</p>
+<p>Hit &lsquo;Command + K&rsquo; to connect to the server with your Pi&rsquo;s IP address (which you should have given a static IP from your router)</p>
 
 <p><img class="alignnone size-full wp-image-132" src="https://i2.wp.com/scottrchristian.com/wp-content/uploads/2017/09/finder2.png?resize=600%2C298&#038;ssl=1" alt="" width="600" height="298" srcset="https://i2.wp.com/scottrchristian.com/wp-content/uploads/2017/09/finder2.png?w=600&ssl=1 600w, https://i2.wp.com/scottrchristian.com/wp-content/uploads/2017/09/finder2.png?resize=300%2C149&ssl=1 300w" sizes="(max-width: 600px) 100vw, 600px" data-recalc-dims="1" /></p>
 
@@ -461,17 +461,15 @@ sudo systemctl enable netatalk</code></pre>
 
 <p><img class="alignnone size-full wp-image-133" src="https://i1.wp.com/scottrchristian.com/wp-content/uploads/2017/09/finder3.png?resize=650%2C355&#038;ssl=1" alt="" width="650" height="355" srcset="https://i1.wp.com/scottrchristian.com/wp-content/uploads/2017/09/finder3.png?w=650&ssl=1 650w, https://i1.wp.com/scottrchristian.com/wp-content/uploads/2017/09/finder3.png?resize=300%2C164&ssl=1 300w" sizes="(max-width: 650px) 100vw, 650px" data-recalc-dims="1" /></p>
 
-<p>&#8230; And you&#8217;re done!</p>
+<p>And you&rsquo;re done!</p>
 
 <p><img class="alignnone size-full wp-image-136" src="https://i0.wp.com/scottrchristian.com/wp-content/uploads/2017/09/completedtimemachinesetup.png?resize=980%2C645&#038;ssl=1" alt="" width="980" height="645" srcset="https://i0.wp.com/scottrchristian.com/wp-content/uploads/2017/09/completedtimemachinesetup.png?w=1344&ssl=1 1344w, https://i0.wp.com/scottrchristian.com/wp-content/uploads/2017/09/completedtimemachinesetup.png?resize=300%2C197&ssl=1 300w, https://i0.wp.com/scottrchristian.com/wp-content/uploads/2017/09/completedtimemachinesetup.png?resize=768%2C505&ssl=1 768w, https://i0.wp.com/scottrchristian.com/wp-content/uploads/2017/09/completedtimemachinesetup.png?resize=1024%2C674&ssl=1 1024w" sizes="(max-width: 980px) 100vw, 980px" data-recalc-dims="1" /></p>
 
 <p>Now to get a bigger drive!</p>
 
-<h2 id="you-8217-ve-now-got-a-fully-functional-raspberry-pi-time-machine">You&#8217;ve now got a fully functional Raspberry Pi Time Machine!</h2>
+<h2 id="you-ve-now-got-a-fully-functional-raspberry-pi-time-machine">You&rsquo;ve now got a fully functional Raspberry Pi Time Machine!</h2>
 
 <p>Thanks again to <a href="https://www.howtogeek.com/276468/how-to-use-a-raspberry-pi-as-a-networked-time-machine-drive-for-your-mac/">HTG</a> for the initial guide I followed and for not getting upset over me borrowing your macOS screenshots.</p>
-
-<p>&nbsp;</p>
 
               
             </div>
@@ -738,8 +736,7 @@ sudo systemctl enable netatalk</code></pre>
                   Sep 9, 2018
                 </span>
               </span>
-              <div class="media-content hide-xs font-merryweather">I would like to share that I&#8217;ve recently uploaded an application I wrote to my GitHub account that can be used to administer raffles. No longer will you have to hand-fill hundreds upon hundreds of tickets for your raffles! EZRaffle will insert as many entries as an entrant is entitled to along with their information. Upon submission, the entrant will optionally be sent an email confirming their entries.
-It&#8217;s written in C# and uses a light-weight SQLite database.</div>
+              <div class="media-content hide-xs font-merryweather">EZRaffle - An open source application for administering raffles I would like to share that I&rsquo;ve recently uploaded an application I wrote to my GitHub account that can be used to administer raffles. No longer will you have to hand-fill hundreds upon hundreds of tickets for your raffles! EZRaffle will insert as many entries as an entrant is entitled to along with their information. Upon submission, the entrant will optionally be sent an email confirming their entries.</div>
             </div>
             <div style="clear:both;"></div>
             <hr>
@@ -756,7 +753,7 @@ It&#8217;s written in C# and uses a light-weight SQLite database.</div>
                   Oct 10, 2017
                 </span>
               </span>
-              <div class="media-content hide-xs font-merryweather">Oddly enough, the language I would say I have the most experience with has been T-SQL. A DML! Transact SQL is a proprietary extension to Structured Query Language and used with Microsoft&#8217;s SQL Server. For the longest time I&#8217;ve hacked together various reports, stored procedures, and jobs to do a range of things. Be it sending daily formatted HTML reports, to using complex queries that update the back end database for business software.</div>
+              <div class="media-content hide-xs font-merryweather">The language I might say I have had the most experience with has been T-SQL. A DML! Transact SQL is a proprietary extension to Structured Query Language and used with Microsoft&rsquo;s SQL Server. For the longest time I&rsquo;ve hacked together various reports, stored procedures, and jobs to do a range of things. Be it sending daily formatted HTML reports, to using complex queries that update the back end database for business software.</div>
             </div>
             <div style="clear:both;"></div>
             <hr>
@@ -773,7 +770,7 @@ It&#8217;s written in C# and uses a light-weight SQLite database.</div>
                   Sep 9, 2017
                 </span>
               </span>
-              <div class="media-content hide-xs font-merryweather">Recently I&#8217;ve gotten more involved in the Decred community. I&#8217;ll elaborate more on my thoughts of what Decred aims to be in an update to this post. Suffice for now to say that its aims are the most admirable I&#8217;ve seen in the space, and having spoken with members of the development team personally, they&#8217;ve got great backers and it&#8217;s going to go far.
+              <div class="media-content hide-xs font-merryweather">Recently I&rsquo;ve gotten more involved in the Decred community. I&rsquo;ll elaborate more on my thoughts of what Decred aims to be in an update to this post. Suffice for now to say that its aims are the most admirable I&rsquo;ve seen in the space, and having spoken with members of the development team personally, they&rsquo;ve got great backers and it&rsquo;s going to go far.
 UPDATE:
 In my opinion, three things make Decred the best cryptocurrency at the moment:</div>
             </div>
@@ -792,7 +789,7 @@ In my opinion, three things make Decred the best cryptocurrency at the moment:</
                   Sep 9, 2017
                 </span>
               </span>
-              <div class="media-content hide-xs font-merryweather">RaspberryPi Time Machine This week I received a new MacBook Pro 2017 to use as my development machine when &#8216;on the go&#8217; (or on the couch, to be more accurate). I also received a larger SSD to replace the boot drive on Desktop PC, and suddenly had a 120GB SSD with no job. I decided to put it to work to hold backups of my new mobile dev machine in the event of the worst case scenario.</div>
+              <div class="media-content hide-xs font-merryweather">RaspberryPi Time Machine This week I received a new MacBook Pro 2017 to use as my development machine when &lsquo;on the go&rsquo; (or on the couch, to be more accurate). I also received a larger SSD to replace the boot drive on Desktop PC, and suddenly had a 120GB SSD with no job. I decided to put it to work to hold backups of my new mobile dev machine in the event of the worst case scenario.</div>
             </div>
             <div style="clear:both;"></div>
             <hr>
@@ -809,8 +806,8 @@ In my opinion, three things make Decred the best cryptocurrency at the moment:</
                   Apr 4, 2017
                 </span>
               </span>
-              <div class="media-content hide-xs font-merryweather">I am currently training for the Network+ certification offered by CompTia. It&#8217;s a vastly more interesting subject for me to review and familiarize myself with than A+ has been in the past. As for the moment I only have the money for one certification and I&#8217;ve decided to pursue this one first.CompTia Certifications
-For anyone else interested in studying up for this or any other CompTia certifications, I highly recommend Professor Messer&#8217;s YouTube Channel, which can be found here.</div>
+              <div class="media-content hide-xs font-merryweather">I am currently training for the Network+ certification offered by CompTia. It&rsquo;s a vastly more interesting subject for me to review and familiarize myself with than A+ has been in the past. As for the moment I only have the money for one certification and I&rsquo;ve decided to pursue this one first.CompTia Certifications
+For anyone else interested in studying up for this or any other CompTia certifications, I highly recommend Professor Messer&rsquo;s YouTube Channel, which can be found here.</div>
             </div>
             <div style="clear:both;"></div>
             <hr>
@@ -827,8 +824,8 @@ For anyone else interested in studying up for this or any other CompTia certific
                   Apr 4, 2017
                 </span>
               </span>
-              <div class="media-content hide-xs font-merryweather">You may have heard. If you haven&#8217;t, then you&#8217;re about to. Which is exciting for you because not having heard is most likely what Congress was hoping for, for nefarious reasons.
-Congress recently passed a bill to repeal the Federal Communication Commission&#8217;s privacy rules for Internet Service Providers (referred to as the common acronym ISPs). These rules never had the opportunity to go into effect, but they would have allowed the average consumer more control over how our ISPs use the data they collect on us.</div>
+              <div class="media-content hide-xs font-merryweather">You may have heard. If you haven&rsquo;t, then you&rsquo;re about to. Which is exciting for you because not having heard is most likely what Congress was hoping for, for nefarious reasons.
+Congress recently passed a bill to repeal the Federal Communication Commission&rsquo;s privacy rules for Internet Service Providers (referred to as the common acronym ISPs). These rules never had the opportunity to go into effect, but they would have allowed the average consumer more control over how our ISPs use the data they collect on us.</div>
             </div>
             <div style="clear:both;"></div>
             <hr>
@@ -845,7 +842,7 @@ Congress recently passed a bill to repeal the Federal Communication Commission&#
                   Dec 12, 2016
                 </span>
               </span>
-              <div class="media-content hide-xs font-merryweather">Scripting languages and command line interfaces is an area I&#8217;ve decided to focus on in 2016. I&#8217;m currently a part of an online course on Python with Udemy by Jose Portilla that I highly recommend. I&#8217;m also diving into Powershell at work to become more familiar with remote Azure AD management. Familiarity with Powershell scripting will make me much more powerful in my domain.
+              <div class="media-content hide-xs font-merryweather">Scripting languages and command line interfaces is an area I&rsquo;ve decided to focus on in 2016. I&rsquo;m currently a part of an online course on Python with Udemy by Jose Portilla that I highly recommend. I&rsquo;m also diving into Powershell at work to become more familiar with remote Azure AD management. Familiarity with Powershell scripting will make me much more powerful in my domain.
 Over the weekend I decided to get a little more comfortable with the command line interface with my Mac.</div>
             </div>
             <div style="clear:both;"></div>
@@ -863,7 +860,7 @@ Over the weekend I decided to get a little more comfortable with the command lin
                   Apr 4, 2016
                 </span>
               </span>
-              <div class="media-content hide-xs font-merryweather">Something I&#8217;ve always wanted to do but have not as of yet, is to look into Open Source development. The biggest reason for being scared off was fear of being the new guy, or committing to a project and then being pigeonholed into something I&#8217;d find boring, such as writing documentation or quality assurance testing. Don&#8217;t get me wrong, I know this stuff is important. I&#8217;ve never tried either of these so it could be something I&#8217;d enjoy, but I really want to focus on new features instead of improving upon old code.</div>
+              <div class="media-content hide-xs font-merryweather">Something I&rsquo;ve always wanted to do but have not as of yet, is to get involved in Open Source development. The biggest reason for being scared off was fear of being the new guy, or committing to a project and then being pigeonholed into something I&rsquo;d find boring, such as writing documentation or quality assurance testing. Don&rsquo;t get me wrong, I know this stuff is important. I&rsquo;ve never tried either of these so it could be something I&rsquo;d enjoy, but I really want to focus on new features instead of improving upon old code.</div>
             </div>
             <div style="clear:both;"></div>
             <hr>
@@ -880,7 +877,7 @@ Over the weekend I decided to get a little more comfortable with the command lin
                   Apr 4, 2016
                 </span>
               </span>
-              <div class="media-content hide-xs font-merryweather">As most of you know, for most of my life I was very anti-Apple. The price difference between an Apple product and the rest of the competition struck me as insane. &#8220;I can get way better specs for that price!&#8221; I&#8217;d think to myself, if I wasn&#8217;t actively debating with someone.
+              <div class="media-content hide-xs font-merryweather">As most of you know, for most of my life I was very anti-Apple. The price difference between an Apple product and the rest of the competition struck me as insane. &ldquo;I can get way better specs for that price!&rdquo; I&rsquo;d think to myself, if I wasn&rsquo;t actively debating with someone.
 This perception started to change when I got my first smartphone. It was a hand-me-down iPhone 3G from my father.</div>
             </div>
             <div style="clear:both;"></div>
@@ -898,9 +895,9 @@ This perception started to change when I got my first smartphone. It was a hand-
                   Jul 7, 2010
                 </span>
               </span>
-              <div class="media-content hide-xs font-merryweather">(The following post is from 2010. I imported my blog posts from my month long trip to Japan for posterity and to remember fondly!)
-Osaka Castle, Osaka Aquarium, Kobe
-I visited Osaka for a few days and stayed at my stepmom&#8217;s friend, Naomi&#8217;s house. They have two kids, Kizuna, 4, and So, 2 years old.
+              <div class="media-content hide-xs font-merryweather">(The following post is from 2010. I imported my blog posts from my month long trip to Japan for posterity and to remember fondly!) Osaka Castle, Osaka Aquarium, Kobe
+** Photoswipe Album **
+I visited Osaka for a few days and stayed at my stepmom&rsquo;s friend, Naomi&rsquo;s house. They have two kids, Kizuna, 4, and So, 2 years old.
 They are really good kids, although really noisy! It had been 3 years since I saw Naomi last.</div>
             </div>
             <div style="clear:both;"></div>
