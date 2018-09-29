@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Scott R Christian</title>
-    <link>https://dezryth.github.io/tags/</link>
+    <link>scottrchristian.com/tags/</link>
     <description>Recent content in Tags on Scott R Christian</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 09 Sep 2017 04:17:55 +0000</lastBuildDate>
     
-	<atom:link href="https://dezryth.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="scottrchristian.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Macos</title>
-      <link>https://dezryth.github.io/tags/macos/</link>
+      <link>scottrchristian.com/tags/macos/</link>
       <pubDate>Sat, 09 Sep 2017 04:17:55 +0000</pubDate>
       
-      <guid>https://dezryth.github.io/tags/macos/</guid>
+      <guid>scottrchristian.com/tags/macos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pi</title>
-      <link>https://dezryth.github.io/tags/pi/</link>
+      <link>scottrchristian.com/tags/pi/</link>
       <pubDate>Sat, 09 Sep 2017 04:17:55 +0000</pubDate>
       
-      <guid>https://dezryth.github.io/tags/pi/</guid>
+      <guid>scottrchristian.com/tags/pi/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Raspberry Pi</title>
-      <link>https://dezryth.github.io/tags/raspberry-pi/</link>
+      <link>scottrchristian.com/tags/raspberry-pi/</link>
       <pubDate>Sat, 09 Sep 2017 04:17:55 +0000</pubDate>
       
-      <guid>https://dezryth.github.io/tags/raspberry-pi/</guid>
+      <guid>scottrchristian.com/tags/raspberry-pi/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sql</title>
-      <link>https://dezryth.github.io/tags/sql/</link>
+      <link>scottrchristian.com/tags/sql/</link>
       <pubDate>Wed, 04 Oct 2017 13:38:45 +0000</pubDate>
       
-      <guid>https://dezryth.github.io/tags/sql/</guid>
+      <guid>scottrchristian.com/tags/sql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Time Machine</title>
-      <link>https://dezryth.github.io/tags/time-machine/</link>
+      <link>scottrchristian.com/tags/time-machine/</link>
       <pubDate>Sat, 09 Sep 2017 04:17:55 +0000</pubDate>
       
-      <guid>https://dezryth.github.io/tags/time-machine/</guid>
+      <guid>scottrchristian.com/tags/time-machine/</guid>
       <description></description>
     </item>
     
