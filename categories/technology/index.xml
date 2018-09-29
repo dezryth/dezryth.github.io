@@ -17,7 +17,8 @@
       <pubDate>Fri, 21 Sep 2018 18:31:16 +0000</pubDate>
       
       <guid>https://dezryth.github.io/2018/09/21/ezraffle-an-open-source-raffle-application/</guid>
-      <description>EZRaffle - An open source application for administering raffles I would like to share that I&amp;rsquo;ve recently uploaded an application I wrote to my GitHub account that can be used to administer raffles. No longer will you have to hand-fill hundreds upon hundreds of tickets for your raffles! EZRaffle will insert as many entries as an entrant is entitled to along with their information. Upon submission, the entrant will optionally be sent an email confirming their entries.</description>
+      <description>I would like to share that I&amp;rsquo;ve recently uploaded an application I wrote to my GitHub account that can be used to administer raffles. No longer will you have to hand-fill hundreds upon hundreds of tickets for your raffles! EZRaffle will insert as many entries as an entrant is entitled to along with their information. Upon submission, the entrant will optionally be sent an email confirming their entries.
+It&amp;rsquo;s written in C# and uses a light-weight SQLite database.</description>
     </item>
     
     <item>
@@ -26,7 +27,7 @@
       <pubDate>Wed, 04 Oct 2017 13:38:45 +0000</pubDate>
       
       <guid>https://dezryth.github.io/2017/10/04/sql-the-differences-in-joins/</guid>
-      <description>SQL: The Differences in Joins The language I might say I have had the most experience with has been T-SQL. A DML! Transact SQL is a proprietary extension to Structured Query Language and used with Microsoft&amp;rsquo;s SQL Server. For the longest time I&amp;rsquo;ve hacked together various reports, stored procedures, and jobs to do a range of things. Be it sending daily formatted HTML reports, to using complex queries that update the back end database for business software.</description>
+      <description>The language I might say I have had the most experience with has been T-SQL. A DML! Transact SQL is a proprietary extension to Structured Query Language and used with Microsoft&amp;rsquo;s SQL Server. For the longest time I&amp;rsquo;ve hacked together various reports, stored procedures, and jobs to do a range of things. Be it sending daily formatted HTML reports, to using complex queries that update the back end database for business software.</description>
     </item>
     
     <item>
@@ -35,7 +36,7 @@
       <pubDate>Wed, 27 Sep 2017 06:22:03 +0000</pubDate>
       
       <guid>https://dezryth.github.io/2017/09/27/decred-cryptocurrency/</guid>
-      <description>Decred Cryptocurrency Recently I&amp;rsquo;ve gotten more involved in the Decred community. I&amp;rsquo;ll elaborate more on my thoughts of what Decred aims to be in an update to this post. Suffice for now to say that its aims are the most admirable I&amp;rsquo;ve seen in the space, and having spoken with members of the development team personally, they&amp;rsquo;ve got great backers and it&amp;rsquo;s going to go far.
+      <description>Recently I&amp;rsquo;ve gotten more involved in the Decred community. I&amp;rsquo;ll elaborate more on my thoughts of what Decred aims to be in an update to this post. Suffice for now to say that its aims are the most admirable I&amp;rsquo;ve seen in the space, and having spoken with members of the development team personally, they&amp;rsquo;ve got great backers and it&amp;rsquo;s going to go far.
 UPDATE:
 In my opinion, three things make Decred the best cryptocurrency at the moment:</description>
     </item>
@@ -46,7 +47,7 @@ In my opinion, three things make Decred the best cryptocurrency at the moment:</
       <pubDate>Sat, 09 Sep 2017 04:17:55 +0000</pubDate>
       
       <guid>https://dezryth.github.io/2017/09/08/raspberry-pi-time-machine/</guid>
-      <description>RaspberryPi Time Machine This week I received a new MacBook Pro 2017 to use as my development machine when &amp;lsquo;on the go&amp;rsquo; (or on the couch, to be more accurate). I also received a larger SSD to replace the boot drive on Desktop PC, and suddenly had a 120GB SSD with no job. I decided to put it to work to hold backups of my new mobile dev machine in the event of the worst case scenario.</description>
+      <description>Raspberry Pi Time Machine This week I received a new MacBook Pro 2017 to use as my development machine when &amp;lsquo;on the go&amp;rsquo; (or on the couch, to be more accurate). I also received a larger SSD to replace the boot drive on Desktop PC, and suddenly had a 120GB SSD with no job. I decided to put it to work to hold backups of my new mobile dev machine in the event of the worst case scenario.</description>
     </item>
     
     <item>
@@ -65,7 +66,7 @@ For anyone else interested in studying up for this or any other CompTia certific
       <pubDate>Fri, 02 Dec 2016 15:48:53 +0000</pubDate>
       
       <guid>https://dezryth.github.io/2016/12/02/scripting/</guid>
-      <description>Scripting Scripting languages and command line interfaces is an area I&amp;rsquo;ve decided to focus on in 2016. I&amp;rsquo;m currently a part of an online course on Python with Udemy by Jose Portilla that I highly recommend. I&amp;rsquo;m also diving into Powershell at work to become more familiar with remote Azure AD management. Familiarity with Powershell scripting will make me much more powerful in my domain.
+      <description>Scripting languages and command line interfaces is an area I&amp;rsquo;ve decided to focus on in 2016. I&amp;rsquo;m currently a part of an online course on Python with Udemy by Jose Portilla that I highly recommend. I&amp;rsquo;m also diving into Powershell at work to become more familiar with remote Azure AD management. Familiarity with Powershell scripting will make me much more powerful in my domain.
 Over the weekend I decided to get a little more comfortable with the command line interface with my Mac.</description>
     </item>
     
