@@ -1,0 +1,4 @@
+This is a Brave Payments publisher verification file.
+
+Domain: scottrchristian.com
+Token: 61f4d17c13768134a0cec9ce2f88d4ed0845aa2e74fe9a6758deca436a09fdad
