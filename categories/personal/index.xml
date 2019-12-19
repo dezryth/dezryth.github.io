@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Personal on Scott R Christian</title>
+    <link>/categories/personal/</link>
+    <description>Recent content in Personal on Scott R Christian</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Dec 2019 20:35:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/personal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>It&#39;s Been a While!</title>
+      <link>/2018/09/21/ezraffle-an-open-source-raffle-application/</link>
+      <pubDate>Wed, 18 Dec 2019 20:35:00 +0000</pubDate>
+      
+      <guid>/2018/09/21/ezraffle-an-open-source-raffle-application/</guid>
+      <description>This is just a test because it&amp;rsquo;s been a while since I&amp;rsquo;ve posted to my blog. I will make a more substantial post later.</description>
+    </item>
+    
+  </channel>
+</rss>
