@@ -8,22 +8,18 @@
 <meta name="generator" content="Hugo 0.49 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="Scott Christian">
 <meta name="keywords" content="">
-<meta name="description" content=" Contractor Dezryth Prior Work I&rsquo;ve put together some evidence of prior work for review for my proposal on Decred&rsquo;s Politeia governance platform. I am seeking to continue doing marketing work with Decred at events as well as managing the Decred Facebook page.
-Decred Contractor &ldquo;Resume&rdquo; Facebook Management Guidelines 2018 Texas Bitcoin Conference Presentation  ">
+<meta name="description" content="Use iOS Shortcuts with Decred You are a savvy cryptocurrency user. You want a convenient way to check your balance, or view status of your tickets without logging into your full-node or VSP. With a little set-up, you can do this from the convenience of your phone in as little as one touch or even a &ldquo;Hey Siri..&rdquo; command. Follow along with this post and you&rsquo;ll not only have this capability, but you&rsquo;ll be equipped to get creative and do all sorts of impressive shit with Siri Shortcuts and running scripts over SSH.">
 
 
-<meta property="og:description" content=" Contractor Dezryth Prior Work I&rsquo;ve put together some evidence of prior work for review for my proposal on Decred&rsquo;s Politeia governance platform. I am seeking to continue doing marketing work with Decred at events as well as managing the Decred Facebook page.
-Decred Contractor &ldquo;Resume&rdquo; Facebook Management Guidelines 2018 Texas Bitcoin Conference Presentation  ">
+<meta property="og:description" content="Use iOS Shortcuts with Decred You are a savvy cryptocurrency user. You want a convenient way to check your balance, or view status of your tickets without logging into your full-node or VSP. With a little set-up, you can do this from the convenience of your phone in as little as one touch or even a &ldquo;Hey Siri..&rdquo; command. Follow along with this post and you&rsquo;ll not only have this capability, but you&rsquo;ll be equipped to get creative and do all sorts of impressive shit with Siri Shortcuts and running scripts over SSH.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Scott R Christian">
 <meta name="twitter:title" content="Scott R Christian">
 <meta property="og:url" content="/1/01/">
 <meta property="twitter:url" content="/1/01/">
 <meta property="og:site_name" content="Scott R Christian">
-<meta property="og:description" content=" Contractor Dezryth Prior Work I&rsquo;ve put together some evidence of prior work for review for my proposal on Decred&rsquo;s Politeia governance platform. I am seeking to continue doing marketing work with Decred at events as well as managing the Decred Facebook page.
-Decred Contractor &ldquo;Resume&rdquo; Facebook Management Guidelines 2018 Texas Bitcoin Conference Presentation  ">
-<meta name="twitter:description" content=" Contractor Dezryth Prior Work I&rsquo;ve put together some evidence of prior work for review for my proposal on Decred&rsquo;s Politeia governance platform. I am seeking to continue doing marketing work with Decred at events as well as managing the Decred Facebook page.
-Decred Contractor &ldquo;Resume&rdquo; Facebook Management Guidelines 2018 Texas Bitcoin Conference Presentation  ">
+<meta property="og:description" content="Use iOS Shortcuts with Decred You are a savvy cryptocurrency user. You want a convenient way to check your balance, or view status of your tickets without logging into your full-node or VSP. With a little set-up, you can do this from the convenience of your phone in as little as one touch or even a &ldquo;Hey Siri..&rdquo; command. Follow along with this post and you&rsquo;ll not only have this capability, but you&rsquo;ll be equipped to get creative and do all sorts of impressive shit with Siri Shortcuts and running scripts over SSH.">
+<meta name="twitter:description" content="Use iOS Shortcuts with Decred You are a savvy cryptocurrency user. You want a convenient way to check your balance, or view status of your tickets without logging into your full-node or VSP. With a little set-up, you can do this from the convenience of your phone in as little as one touch or even a &ldquo;Hey Siri..&rdquo; command. Follow along with this post and you&rsquo;ll not only have this capability, but you&rsquo;ll be equipped to get creative and do all sorts of impressive shit with Siri Shortcuts and running scripts over SSH.">
 <meta property="og:locale" content="en-us">
 
   
@@ -254,22 +250,76 @@ if (!doNotTrack) {
             <div class="main-content-wrap">
               
 
-<h1 id="contractor-dezryth-prior-work">Contractor Dezryth Prior Work</h1>
+<h1 id="use-ios-shortcuts-with-decred">Use iOS Shortcuts with Decred</h1>
 
-<p>I&rsquo;ve put together some evidence of prior work for review for my proposal on Decred&rsquo;s Politeia governance platform. I am seeking to continue doing marketing work with Decred at events as well as managing the Decred <a href="https://www.facebook.com/decredproject/">Facebook page</a>.</p>
+<p>You are a savvy cryptocurrency user. You want a convenient way to check your balance, or view status of your tickets without logging into your full-node or VSP. With a little set-up, you can do this from the convenience of your phone in as little as one touch or even a &ldquo;Hey Siri..&rdquo; command. Follow along with this post and you&rsquo;ll not only have this capability, but you&rsquo;ll be equipped to get creative and do all sorts of impressive shit with Siri Shortcuts and running scripts over SSH. If this sounds too complicated, it&rsquo;s not! Reach out for help or do a little googling.</p>
 
-<h2 id="decred-contractor-resume">Decred Contractor &ldquo;Resume&rdquo;</h2>
+<p>tl;dr - We&rsquo;re going to be creating a simple script using Python, allowing SSH connections from your phone, and setting up a Siri shortcut to run the script. I&rsquo;m not going into super nitty gritty details. Learning to teach yourself will take you far in this world!</p>
 
-<p><img src="/img/dcrresume.png" alt="Contractor Details" /></p>
+<h2 id="requirements">Requirements</h2>
 
-<h2 id="facebook-management-guidelines">Facebook Management Guidelines</h2>
+<h3 id="full-node-with-the-latest-version-of-decred-software">Full node with the latest version of Decred software</h3>
 
-<p><img src="/img/fbguidelines1.png" alt="Facebook Guidelines Page 1" />
-<img src="/img/fbguidelines2.png" alt="Facebook Guidelines Page 2" /></p>
+<ul>
+<li>Also I&rsquo;m assuming you&rsquo;re using a linux distro to run your node. If not you may need to do a little extra googling to figure out how to modify steps to your needs.</li>
+<li>If you aren&rsquo;t running your own full node, I highly suggest you start. If your Decred is hosted by a third party and you don&rsquo;t control your keys, you&rsquo;re opening yourself up to losing your Decred in the event of a breach.</li>
+<li>(Doesn&rsquo;t truly need to be the latest version, but get on the latest version if you aren&rsquo;t already!)</li>
+</ul>
 
-<h2 id="2018-texas-bitcoin-conference-presentation">2018 Texas Bitcoin Conference Presentation</h2>
+<h3 id="iphone-with-static-ip-address">iPhone with static IP address</h3>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1LLk6Wwz61I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<ul>
+<li>This tutorial can be done with an Android phone, but I specifically cover how to use Siri Shortcuts to run the scripts on your full node. If you don&rsquo;t know how to assign a static IP address, I recommend this <a href="https://www.howtogeek.com/184310/ask-htg-should-i-be-setting-static-ip-addresses-on-my-router/">guide</a> from howtogeek.com, which tends to offer comprehensive guides for neat shit like this in an easily comprehensible way.</li>
+</ul>
+
+<h2 id="steps">Steps</h2>
+
+<h3 id="1-the-script-on-the-server">1. The Script on the Server</h3>
+
+<p>Create a file on your server at /home/user, which should be the first directory you find yourself in immediately after logging in. Call it <code>balance.py</code>.</p>
+
+<pre><code class="language-python">import json
+import sys
+from pprint import pprint
+
+jdata = sys.stdin
+
+data = json.load(jdata)
+
+print &quot;Your balance is &quot; + str(round(data[&quot;cumulativetotal&quot;], 2)) + &quot; DCR&quot;
+
+jdata.close()
+</code></pre>
+
+<h3 id="2-the-security">2. The Security</h3>
+
+<p>Go set up the static address assignment for your phone with the guide from the requirements section.</p>
+
+<p>You&rsquo;re using a linux distro so firewall rules are simple with ufw. Use this <a href="https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands#allow-incoming-ssh-from-specific-ip-address-or-subnet">guide</a> to enable your phone to connect over SSH by allowing it&rsquo;s IP address, which should not change because you&rsquo;ve set up your router to assign your phone a static IP address when it&rsquo;s on your network.</p>
+
+<h3 id="3-the-siri-shortcut">3. The Siri Shortcut</h3>
+
+<p>With Shortcuts, Apple has allowed some power-user functionality that can really extend the utility of your phone. The shortcut we&rsquo;re creating here is very simple. Add and &lsquo;Run Script over SSH&rsquo; step, and follow it up with a &lsquo;Notification&rsquo; step.</p>
+
+<p>In your script step, populate the name of your server, your username and password, and the command to run your script:</p>
+
+<p><code>dcrctl --wallet getbalance | python balance.py</code></p>
+
+<p><img src="/img/shortcut-1.jpg" alt="Script Step" /></p>
+
+<p>In your notification step, you pass in the Shell Script Result from the previous step as your variable. You can then set your Title for the notification.</p>
+
+<p><img src="/img/shortcut-2.jpg" alt="Notification Step" /></p>
+
+<p>You&rsquo;re done! Now try running it and tweak whatever settings to your hearts content. When you run it, you should see something similar to below:</p>
+
+<p><img src="/img/shortcut-notification.jpg" alt="Woohoo!" /></p>
+
+<h2 id="no-need-to-stop-here">No need to stop here</h2>
+
+<p>You&rsquo;ve learned everything you need to create some advanced features accessible to you conveniently. Create more scripts for different tasks. You can even return information for things completely unrelated to Decred if you want, though I&rsquo;d recommend using a separate server. Do you frequently pay a particular address? You could script it and make it simple to issue your sendtoaddress command with a button press. You are running your own bank account, in a sense. You can build yourself utilities to bring the convenience you get from your fiat banking account apps, and then share the source with the world to enable more people to take back control of their personal finances.</p>
+
+<p>Now that you&rsquo;re done with this, maybe consider giving your grandparents a call. It&rsquo;s probably been a while and you know they&rsquo;d appreciate it. I know I can be bad with this myself. Staying in touch with family is important. Check out the app <a href="https://uphabit.com/">Uphabit</a> to set reminders to stay in touch with the important relationships in your life. They didn&rsquo;t pay me anything to say this. Just thought I&rsquo;d suggest calling grandma. :)</p>
 
               
             </div>
@@ -512,6 +562,25 @@ if (!doNotTrack) {
           <div class="media">
             
             <div class="media-body">
+              <a class="link-unstyled" href="/2020/01/21/dezryth-2018-prior-work/">
+                <h3 class="media-heading">Contractor Dezryth - 2018 Prior Work</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jan 1, 2020
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">I&rsquo;ve put together some evidence of prior work for review for my proposal on Decred&rsquo;s Politeia governance platform. I am seeking to continue doing marketing work with Decred at events as well as managing the Decred Facebook page.
+You can view my proposal here.
+Overview Facebook Management Guidelines I want to whip the page into better shape and increase engagement. We&rsquo;ve got metrics to compare to competitor pages, and there&rsquo;s no reason we shouldn&rsquo;t beat them at being one of the most compelling cryptocurrency pages to follow.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
               <a class="link-unstyled" href="/2019/12/18/2019-in-review/">
                 <h3 class="media-heading">It&#39;s Been a While - 2019</h3>
               </a>
@@ -670,24 +739,6 @@ Over the weekend I decided to get a little more comfortable with the command lin
             <hr>
           </div>
         
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="/2016/04/12/os-x/">
-                <h3 class="media-heading">OS X</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  Apr 4, 2016
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather">As most of you know, for most of my life I was very anti-Apple. The price difference between an Apple product and the rest of the competition struck me as insane. &ldquo;I can get way better specs for that price!&rdquo; I&rsquo;d think to myself, if I wasn&rsquo;t actively debating with someone.
-This perception started to change when I got my first smartphone. It was a hand-me-down iPhone 3G from my father.</div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
       </div>
     </div>
     <div class="modal-footer">
@@ -695,7 +746,7 @@ This perception started to change when I got my first smartphone. It was a hand-
          data-message-zero="no post found"
          data-message-one="1 post found"
          data-message-other="{n} posts found">
-         22 posts found
+         23 posts found
       </p>
     </div>
   </div>
