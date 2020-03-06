@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Scott R Christian</title>
@@ -6,19 +6,10 @@
     <description>Recent content in Categories on Scott R Christian</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 Sep 2017 04:17:55 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Feb 2020 21:30:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Apple</title>
-      <link>/categories/apple/</link>
-      <pubDate>Sat, 09 Sep 2017 04:17:55 +0000</pubDate>
-      
-      <guid>/categories/apple/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Decred</title>
@@ -26,24 +17,6 @@
       <pubDate>Mon, 17 Feb 2020 21:30:00 +0000</pubDate>
       
       <guid>/categories/decred/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Japan Trip 2010</title>
-      <link>/categories/japan-trip-2010/</link>
-      <pubDate>Fri, 16 Jul 2010 06:20:01 +0000</pubDate>
-      
-      <guid>/categories/japan-trip-2010/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>/categories/linux/</link>
-      <pubDate>Sat, 09 Sep 2017 04:17:55 +0000</pubDate>
-      
-      <guid>/categories/linux/</guid>
       <description></description>
     </item>
     
@@ -57,6 +30,33 @@
     </item>
     
     <item>
+      <title>Technology</title>
+      <link>/categories/technology/</link>
+      <pubDate>Fri, 21 Sep 2018 18:31:16 +0000</pubDate>
+      
+      <guid>/categories/technology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Apple</title>
+      <link>/categories/apple/</link>
+      <pubDate>Sat, 09 Sep 2017 04:17:55 +0000</pubDate>
+      
+      <guid>/categories/apple/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>/categories/linux/</link>
+      <pubDate>Sat, 09 Sep 2017 04:17:55 +0000</pubDate>
+      
+      <guid>/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Politics</title>
       <link>/categories/politics/</link>
       <pubDate>Sat, 01 Apr 2017 23:08:13 +0000</pubDate>
@@ -66,11 +66,11 @@
     </item>
     
     <item>
-      <title>Technology</title>
-      <link>/categories/technology/</link>
-      <pubDate>Fri, 21 Sep 2018 18:31:16 +0000</pubDate>
+      <title>Japan Trip 2010</title>
+      <link>/categories/japan-trip-2010/</link>
+      <pubDate>Fri, 16 Jul 2010 06:20:01 +0000</pubDate>
       
-      <guid>/categories/technology/</guid>
+      <guid>/categories/japan-trip-2010/</guid>
       <description></description>
     </item>
     

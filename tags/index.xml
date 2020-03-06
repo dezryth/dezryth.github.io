@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Scott R Christian</title>
@@ -6,40 +6,13 @@
     <description>Recent content in Tags on Scott R Christian</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 Sep 2017 04:17:55 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Oct 2017 13:38:45 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Macos</title>
-      <link>/tags/macos/</link>
-      <pubDate>Sat, 09 Sep 2017 04:17:55 +0000</pubDate>
-      
-      <guid>/tags/macos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pi</title>
-      <link>/tags/pi/</link>
-      <pubDate>Sat, 09 Sep 2017 04:17:55 +0000</pubDate>
-      
-      <guid>/tags/pi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Raspberry Pi</title>
-      <link>/tags/raspberry-pi/</link>
-      <pubDate>Sat, 09 Sep 2017 04:17:55 +0000</pubDate>
-      
-      <guid>/tags/raspberry-pi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sql</title>
+      <title>SQL</title>
       <link>/tags/sql/</link>
       <pubDate>Wed, 04 Oct 2017 13:38:45 +0000</pubDate>
       
@@ -48,7 +21,34 @@
     </item>
     
     <item>
-      <title>Time Machine</title>
+      <title>macOS</title>
+      <link>/tags/macos/</link>
+      <pubDate>Sat, 09 Sep 2017 04:17:55 +0000</pubDate>
+      
+      <guid>/tags/macos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pi</title>
+      <link>/tags/pi/</link>
+      <pubDate>Sat, 09 Sep 2017 04:17:55 +0000</pubDate>
+      
+      <guid>/tags/pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>raspberry-pi</title>
+      <link>/tags/raspberry-pi/</link>
+      <pubDate>Sat, 09 Sep 2017 04:17:55 +0000</pubDate>
+      
+      <guid>/tags/raspberry-pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>time-machine</title>
       <link>/tags/time-machine/</link>
       <pubDate>Sat, 09 Sep 2017 04:17:55 +0000</pubDate>
       

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Raspberry Pi on Scott R Christian</title>
+    <title>raspberry-pi on Scott R Christian</title>
     <link>/tags/raspberry-pi/</link>
-    <description>Recent content in Raspberry Pi on Scott R Christian</description>
+    <description>Recent content in raspberry-pi on Scott R Christian</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 09 Sep 2017 04:17:55 +0000</lastBuildDate>

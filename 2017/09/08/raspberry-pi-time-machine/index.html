@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.49 with theme Tranquilpeak 0.4.3-SNAPSHOT">
+<meta name="generator" content="Hugo 0.65.3 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="Scott Christian">
 <meta name="keywords" content="">
 <meta name="description" content="Raspberry Pi Time Machine This week I received a new MacBook Pro 2017 to use as my development machine when &lsquo;on the go&rsquo; (or on the couch, to be more accurate). I also received a larger SSD to replace the boot drive on Desktop PC, and suddenly had a 120GB SSD with no job. I decided to put it to work to hold backups of my new mobile dev machine in the event of the worst case scenario.">
@@ -281,114 +281,64 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              
-
-<h1 id="raspberry-pi-time-machine">Raspberry Pi Time Machine</h1>
-
+              <h1 id="raspberry-pi-time-machine">Raspberry Pi Time Machine</h1>
 <p>This week I received a new MacBook Pro 2017 to use as my development machine when &lsquo;on the go&rsquo; (or on the couch, to be more accurate). I also received a larger SSD to replace the boot drive on Desktop PC, and suddenly had a 120GB SSD with no job. I decided to put it to work to hold backups of my new mobile dev machine in the event of the worst case scenario. Now, I could have just tossed it in my external enclosure and plugged it in every once in a while for backups, but I know I&rsquo;m too lazy to remember to do that often enough, and backing up wirelessly over the network is just so much more convenient and sounded like the kind of project I&rsquo;d have a little fun with. Below is how the process went. If you stumbled upon this, you should be able to follow along with a few possible differences depending on the model of Pi you have. Make sure to read the following before moving to the instructions, as you&rsquo;ll appreciate avoiding all the issues I ran into figuring this out. Thanks to <a href="https://www.howtogeek.com/276468/how-to-use-a-raspberry-pi-as-a-networked-time-machine-drive-for-your-mac/">HTG</a> for getting me most of the way there.</p>
-
 <h2 id="requirements">Requirements</h2>
-
 <p>Raspberry Pi with Raspbian Jessie;</p>
-
 <p>** You may be able to get this to work with stretch with some modifications, but some of the commands in my instructions WILL NOT work in Raspbian stretch when installing Netatalk.</p>
-
 <p>External Drive</p>
-
 <p>SD/Micro SD Card and reader</p>
-
 <h2 id="instructions">Instructions</h2>
-
 <p>Install Raspbian Jessie Lite onto your PI. I recommend Win32 Disk Imager to write your image to your SD card if you have access to a Windows PC. Otherwise, google around for an equivalent for macOS.</p>
-
 <p><strong>! WAIT !</strong></p>
-
 <p>Before you go tuck your little headless computer away make sure to enable the SSH server. The SSH server is no longer enabled by default.</p>
-
 <p>Format your external drive on your macOS machine to work with time machine.</p>
-
 <p>Launch disk utility. Select your drive. Give it a name and set the format to &lsquo;Mac OS Extended&rsquo;, and scheme to GUID Partition Map. Click Erase.</p>
-
-<p><img src="/img/hfs1.png" alt="hfs1" /></p>
-
+<p><img src="/img/hfs1.png" alt="hfs1"></p>
 <p>Open finder and right click your drive. Select Get Info&rsquo;.</p>
-
-<p><img src="/img/hfs2.png" alt="hfs2" /></p>
-
+<p><img src="/img/hfs2.png" alt="hfs2"></p>
 <p>Set &lsquo;everyone&rsquo; to &lsquo;Read &amp; Write&rsquo;, and check &lsquo;Ignore ownership on this volume&rsquo;</p>
-
-<p><img src="/img/hfs3.png" alt="hfs3" /></p>
-
+<p><img src="/img/hfs3.png" alt="hfs3"></p>
 <p>Now unmount the drive and go plug it into your Raspberry Pi.</p>
-
 <p>Update your repositories and update your packages.</p>
-
 <pre><code>sudo apt-get update
 sudo apt-get upgrade
 </code></pre>
-
 <p>Install packages hfsprogs and hfsplus:</p>
-
 <pre><code>sudo apt-get install hfsprogs hfsplus
 </code></pre>
-
 <p>Create the following directory:</p>
-
 <pre><code>sudo mkdir -p /media/tm
 </code></pre>
-
 <p>Modify the permissions of the directory with this command:</p>
-
 <pre><code>sudo chown pi:pi /media/tm
 </code></pre>
-
 <p>Configure Pi to mount drive on start up.</p>
-
 <p>Find your drives UUID (Universally Unique Identifier) with this command:</p>
-
-<p><img src="/img/finding-uuid.png" alt="Finding UUID" /></p>
-
+<p><img src="/img/finding-uuid.png" alt="Finding UUID"></p>
 <p>Modify your fstab file to automatically mount your external drive on boot-up:</p>
-
 <pre><code>sudo nano /etc/fstab
 </code></pre>
-
-<p><img src="/img/fstab.png" alt="fstab" /></p>
-
+<p><img src="/img/fstab.png" alt="fstab"></p>
 <p>The line you want to add will look like this. Feel free to copy, paste, and modify with your UUID.</p>
-
 <pre><code>UUID=&quot;abc68498-4ff7-3e78-8131-4982b8dcc1aa&quot; /media/tm hfsplus force,rw,user,auto 0 0
 </code></pre>
-
 <p><strong>! BE CAREFUL !</strong></p>
-
 <p>Make sure you enter this correctly, as messing up here and not realizing will corrupt your fstab file and if you reboot before correcting it, your pi will not boot correctly. In the event of this, you&rsquo;ll have to edit your fstab file from another Linux system to fix your mistake.</p>
-
 <p>Test that your drive mounts correctly after this modification:</p>
-
 <pre><code>sudo mount -a
 </code></pre>
-
 <p>If you don&rsquo;t get an error here, then you&rsquo;re set.</p>
-
 <p>Install Netatalk:</p>
-
 <p>Use the following command to install all the dependencies you need at once</p>
-
 <p><code>sudo aptitude install build-essential libevent-dev libssl-dev libgcrypt11-dev libkrb5-dev libpam0g-dev libwrap0-dev libdb-dev libtdb-dev default-libmysqlclient-dev avahi-daemon libavahi-client-dev libacl1-dev libldap2-dev libcrack2-dev systemtap-sdt-dev libdbus-1-dev libdbus-glib-1-dev libglib2.0-dev libio-socket-inet6-perl tracker libtracker-sparql-1.0-dev libtracker-miner-1.0-dev</code></p>
-
 <p>Download the latest version of <a href="http://netatalk.sourceforge.net/">Netatalk</a> by making sure you have the correct version number with the following command</p>
-
 <pre><code>wget http://prdownloads.sourceforge.net/netatalk/netatalk-3.1.11.tar.gz
 </code></pre>
-
 <p>Unpack the file:</p>
-
 <pre><code>tar -xf netatalk-3.1.11.tar.gz
 </code></pre>
-
 <p>Switch to the new folder created, and run this command to configure Netatalk&rsquo;s settings:</p>
-
 <pre><code>./configure \
 --with-init-style=debian-systemd \
 --without-libevent \
@@ -400,41 +350,26 @@ sudo apt-get upgrade
 --with-dbus-sysconf-dir=/etc/dbus-1/system.d \
 --with-tracker-pkgconfig-version=1.0
 </code></pre>
-
 <p>You are now going to build the source in this folder. This takes a little while.</p>
-
 <pre><code>make
 </code></pre>
-
 <p>and install</p>
-
 <pre><code>sudo make install
 </code></pre>
-
 <p>Ensure it&rsquo;s running with this command:</p>
-
 <pre><code>netatalk -V
 </code></pre>
-
 <p>We&rsquo;ve now got to configure Netatalk</p>
-
 <pre><code>sudo nano /etc/nsswitch.conf
 </code></pre>
-
 <p>To get your Time Machine drive to show up in Finder&rsquo;s sidebar you&rsquo;ll need to add this to the line that begins with &lsquo;hosts&rsquo;:</p>
-
 <pre><code>mdns4 mdns
 </code></pre>
-
-<p><img src="/img/nsswitchconf.png" alt="nsswitchconf" /></p>
-
+<p><img src="/img/nsswitchconf.png" alt="nsswitchconf"></p>
 <p>Edit apfd.service</p>
-
 <pre><code>sudo nano /etc/avahi/services/afpd.service
 </code></pre>
-
 <p>and add this block of text to the file:</p>
-
 <pre><code>&lt;?xml version=&quot;1.0&quot; standalone='no'?&gt;&lt;!--*-nxml-*--&gt;
 &lt;!DOCTYPE service-group SYSTEM &quot;avahi-service.dtd&quot;&gt;
 &lt;service-group&gt;
@@ -450,14 +385,10 @@ sudo apt-get upgrade
     &lt;/service&gt;
 &lt;/service-group&gt;
 </code></pre>
-
 <p>Now set up your external drive as a network share.</p>
-
 <pre><code>sudo nano /usr/local/etc/afp.conf
 </code></pre>
-
 <p>Change the two sections that start with [Global] and [My Time Machine Volume] to this text:</p>
-
 <pre><code>[Global]
 mimic model = TimeCapsule6,106
 
@@ -465,43 +396,26 @@ mimic model = TimeCapsule6,106
 path = /media/tm
 time machine = yes
 </code></pre>
-
 <p>Now you need to start the network services with these commands:</p>
-
 <pre><code>sudo service avahi-daemon start
 sudo service netatalk start
 </code></pre>
-
 <p><strong>! IMPORTANT !</strong></p>
-
 <p>Make sure you set your Pi to start these services every time your Pi boots with these commands:</p>
-
 <pre><code>sudo systemctl enable avahi-daemon
 sudo systemctl enable netatalk
 </code></pre>
-
 <p><em>We&rsquo;re almost done.</em></p>
-
 <p>Now hop on to your Mac and you should see your Pi under &lsquo;shared&rsquo; inside of Finder.</p>
-
-<p><img src="/img/finder1.png" alt="finder1" /></p>
-
+<p><img src="/img/finder1.png" alt="finder1"></p>
 <p>Hit &lsquo;Command + K&rsquo; to connect to the server with your Pi&rsquo;s IP address (which you should have given a static IP from your router)</p>
-
-<p><img src="/img/finder2.png" alt="finder2" /></p>
-
+<p><img src="/img/finder2.png" alt="finder2"></p>
 <p>Now go to System Preferences &gt; Time Machine and select the drive as your Time Machine backup.</p>
-
-<p><img src="/img/finder3.png" alt="finder3" /></p>
-
+<p><img src="/img/finder3.png" alt="finder3"></p>
 <p>And you&rsquo;re done!</p>
-
-<p><img src="/img/completedtimemachinesetup.png" alt="Completed Time Machine Setup" /></p>
-
+<p><img src="/img/completedtimemachinesetup.png" alt="Completed Time Machine Setup"></p>
 <p>Now to get a bigger drive!</p>
-
-<h2 id="you-ve-now-got-a-fully-functional-raspberry-pi-time-machine">You&rsquo;ve now got a fully functional Raspberry Pi Time Machine</h2>
-
+<h2 id="youve-now-got-a-fully-functional-raspberry-pi-time-machine">You&rsquo;ve now got a fully functional Raspberry Pi Time Machine</h2>
 <p>Thanks again to <a href="https://www.howtogeek.com/276468/how-to-use-a-raspberry-pi-as-a-networked-time-machine-drive-for-your-mac/">HTG</a> for the initial guide I followed and for not getting upset over me borrowing your macOS screenshots.</p>
 
               
